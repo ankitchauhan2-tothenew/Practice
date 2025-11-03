@@ -1,6 +1,8 @@
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.Arrays;
+import java.util.List;
 
 
 class InvalidAgeException extends Exception {
@@ -62,6 +64,9 @@ public class Main {
         divideNumbers(10, 0);
         arrayAccess();
         readFile();
+
+        List<Integer> numbers = Arrays.asList(1,2,3,4,5,6,7,8,9,10);
+//        numbers.stream().collect();
 
         try {
             validateAge(15);
